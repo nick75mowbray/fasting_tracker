@@ -1,1 +1,15 @@
+idea for project:
+fasting tracker
 
+core concept:
+fasting timer, user selects fast type:
+    -16hr, 18hr, 20hr.
+-lets them know when fast ends/ when to eat
+-track the users progress/ previous fasts
+-get tweets from fitness people.
+-user posts to twitter from app to share progress to twitter.
+-bar graph weekly progress, hours fasted, hours eating.
+
+added functions:
+-recipe finder
+-fasting advice
