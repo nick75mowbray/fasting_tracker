@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fasting tracker</title>
+    <link rel="stylesheet" type="style/css" href="style.css">
 </head>
 <body>
-    
+    <!-- hamburger menu / side pop up -->
+    <nav id="menu">
+        <div id="side-pop-up">
+            <!-- hamburger icon -->
+            <i class="fas fa-bars" onclick="menu()"></i>
+            <div class="menu-container">
+                <ul id="menu-list">
+                    <li id="timer-li">Fasting timer</li>
+                    <hr class="line">
+                    <li id="BMI-li">BMI calculator</li>
+                    <hr class="line">
+                    <li id="calorie-li">Calorie calculator</li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <script src="javascript.js"></script>
 </body>
 </html>
