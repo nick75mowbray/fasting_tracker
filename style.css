@@ -3,3 +3,8 @@
     display: flex;
     justify-content: flex-end;
 }
+
+#timer-div {
+    width: 300px;
+    height: 150px;
+}
