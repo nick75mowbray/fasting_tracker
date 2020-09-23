@@ -6,6 +6,7 @@
     <script src="https://use.fontawesome.com/e6f98328ec.js"></script>
     <title>Fasting tracker</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <!-- hamburger menu / side pop up -->
@@ -31,6 +32,7 @@
                 </ul>
             </div>
         </div>
+    </nav>
 <main>
     <div id="fasting-type">
         <h3 id="fasting-state-message">You're fasting!</h3>
@@ -46,6 +48,11 @@
             <p id="elapsed-time">Elapsed time: 69%</p>
             <h1 id="digits-display">0:00:00</h1>
         </div>
+    </div>
+    <!-- <div id="circle-container"> -->
+        <div class="progress" id="progress">
+
+        <!-- </div> -->
     </div>
 
     <div id="start-finish-times">
@@ -74,11 +81,12 @@
     <div id="weekly-progress-container">
         <h4>Weekly Progress</h4>
         <div id="graph-container">
-            
+
         </div>
     </div>
 </main>
-    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
