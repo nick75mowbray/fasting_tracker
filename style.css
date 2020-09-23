@@ -1,5 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 /* side menu */
-.close {
+#menu {
+    position: fixed;
+}
+#close {
     display: flex;
     justify-content: flex-end;
+}
+div.bar {
+        width: 25px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        border-radius: 2px;
+}
+#menu-container {
+    width: 80vw;
+    max-width: 400px;
+    box-shadow: 0 0 10px #cccccc;
+    height: 100vh;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+li.menu-li {
+    margin: 10px 0;
+}
+#hamburger {
+    padding: 15px;
+}
+#close-icon {
+    margin-right: 15px;
+}
+/* main */
+main {
+    text-align: center;
+}
+/* message / type of fast selector */
+#fasting-type {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}
+/* timer display */
+#timer {
+    margin: 30px;
+}
+/* start and finish times */
+#start-finish-times {
+    display: flex;
+    justify-content: space-around;
+}
+.edit-time-container {
+    display: flex;
+    justify-content: space-between;
 }

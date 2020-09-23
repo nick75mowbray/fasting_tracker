@@ -1,10 +1,17 @@
 $(document).ready(function(){
-    function menu(){
+    console.log("js file working");
+    
+    // open hamburger menu
+    $('#hamburger').on("click", function(){
         $('#menu-container').css('display', 'block');
-        $('.close').css('display', 'flex')
-    };
+        $('#hamburger').css('display', 'none');
+    });
 
-
+    //close hamburger menu
+    $('#close').on("click", function(){
+        $('#menu-container').css('display', 'none');
+        $('#hamburger').css('display', 'block');
+    });
 
 
 
