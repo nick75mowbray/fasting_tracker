@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fasting tracker</title>
+    <script src="https://use.fontawesome.com/e295a71128.js"></script>
     <link rel="stylesheet" type="style/css" href="style.css">
 </head>
 <body>
@@ -12,7 +13,11 @@
         <div id="side-pop-up">
             <!-- hamburger icon -->
             <i class="fas fa-bars" onclick="menu()"></i>
-            <div class="menu-container">
+            <div class="menu-container" style="display: none;">
+                <div class="close" style="display: none;">
+                    <i class="fas fa-times"></i>
+                    <p>close</p>
+                </div>
                 <ul id="menu-list">
                     <li id="timer-li">Fasting timer</li>
                     <hr class="line">
@@ -24,6 +29,10 @@
         </div>
 
     </nav>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
 </body>
 </html>
