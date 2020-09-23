@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('#hamburger').on("click", function(){
         $('#menu-container').css('display', 'block');
         $('#hamburger').css('display', 'none');
+        console.log("menu icon click is working");
     });
 
     //close hamburger menu

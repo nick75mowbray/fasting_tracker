@@ -1,25 +1,28 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'sans-serif';
 }
 /* side menu */
 #menu {
     position: fixed;
 }
 #close {
+    color: #9E9E9E;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 div.bar {
         width: 25px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
+        height: 4px;
+        background-color: #9E9E9E;
+        margin: 5px 0;
         border-radius: 2px;
 }
 #menu-container {
     width: 80vw;
-    max-width: 400px;
+    max-width: 300px;
     box-shadow: 0 0 10px #cccccc;
     height: 100vh;
     padding: 20px;
@@ -33,8 +36,14 @@ li.menu-li {
 #hamburger {
     padding: 15px;
 }
+
+
 #close-icon {
-    margin-right: 15px;
+    margin-left: 15px;
+}
+.line {
+    border-top: 1px solid #FFCC00;
+    width: 200px;
 }
 /* main */
 main {
@@ -42,9 +51,20 @@ main {
 }
 /* message / type of fast selector */
 #fasting-type {
+    top: -35px;
     width: 100vw;
     margin: auto;
     text-align: center;
+}
+#type-selector {
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 3px;
+    border: 1px solid #FFCC00;
+}
+.fast-type {
+    padding-left: 15px;
 }
 /* timer display */
 #timer {
@@ -58,4 +78,23 @@ main {
 .edit-time-container {
     display: flex;
     justify-content: space-between;
+}
+/* button */
+#start-end-btn {
+    background-color: #FFCC00;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+/* weekly progress */
+#weekly-progress-container {
+    box-shadow: 0 0 10px #cccccc;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
 }
