@@ -12,6 +12,11 @@
     color: #9E9E9E;
     display: flex;
     justify-content: flex-end;
+}
+
+#timer-div {
+    width: 300px;
+    height: 150px;
     align-items: center;
 }
 div.bar {
