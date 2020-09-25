@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    function menu(){
+    console.log("js file working");
+    
+    // open hamburger menu
+    $('#hamburger').on("click", function(){
         $('#menu-container').css('display', 'block');
         $('.close').css('display', 'flex')
     };
@@ -59,6 +62,27 @@ $(document).ready(function(){
     }
 
     bmiCalc();
+    });
 
+    //close hamburger menu
+    $('#close').on("click", function(){
+        $('#menu-container').css('display', 'none');
+        $('#hamburger').css('display', 'block');
+    });
+
+
+    var progressBar = new ProgressBar.Circle('#progress', {
+        color: '#FFCC00',
+        strokeWidth: 5,
+        trailWidth: 0.8,
+        svgStyle: {
+            display: 'block',
+            width: '100%'
+        },
+        fill: 'rgba(255, 255, 50, 1)',
+        stroke: 2,
+        duration: 1200,
+        warnings: true
+    });
 
 }); //end document ready 
