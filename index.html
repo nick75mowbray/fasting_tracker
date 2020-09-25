@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/e6f98328ec.js"></script>
     <title>Fasting tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
@@ -61,7 +62,7 @@
             <p class="start-finish" id="started">Started fasting:</p>
             <div class="edit-time-container">
                 <p class="time" id="time-started">8:00pm</p>
-                <p>edit icon</p>
+                <p id="edit-start" class="edit">edit</p>
             </div>
         </div>
 
@@ -69,7 +70,7 @@
             <p class="start-finish" id="ended">End fast:</p>
             <div class="edit-time-container">
                 <p class="time" id="time-ended">12:00pm</p>
-                <p>edit icon</p>
+                <p id="edit-end" class="edit">edit</p>
             </div>
         </div>
     </div>
@@ -81,7 +82,49 @@
     <div id="weekly-progress-container">
         <h4>Weekly Progress</h4>
         <div id="graph-container">
-
+            <div id="graph-values">
+                <p class="graph-label">24</p>
+                <p class="graph-label">20</p>
+                <p class="graph-label">16</p>
+                <p class="graph-label">14</p>
+                <p class="graph-label">10</p>
+                <p class="graph-label">6</p>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
         </div>
     </div>
 </main>

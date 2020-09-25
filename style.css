@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'sans-serif';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 /* side menu */
 #menu {
-    position: fixed;
+    position: relative;
+    top: -40px;
 }
 #close {
     color: #9E9E9E;
@@ -26,12 +27,14 @@ div.bar {
     box-shadow: 0 0 10px #cccccc;
     height: 100vh;
     padding: 20px;
+    margin-top: 40px;
 }
 ul {
     list-style: none;
 }
 li.menu-li {
     margin: 10px 0;
+    font-size: 0.9rem;
 }
 #hamburger {
     padding: 15px;
@@ -82,6 +85,9 @@ main {
 #timer {
     margin: 30px;
 }
+#elapsed-time {
+    color: #9E9E9E;
+}
 /* start and finish times */
 #start-finish-times {
     display: flex;
@@ -89,7 +95,14 @@ main {
 }
 .edit-time-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.edit {
+    color: #FFCC00;
+    margin-left: 8px;
+}
+.start-finish {
+    color: #9E9E9E;
 }
 /* button */
 #start-end-btn {
@@ -109,4 +122,37 @@ main {
     border-radius: 15px;
     overflow: hidden;
     padding: 15px;
+}
+#graph-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.graph-label {
+    font-size: 0.8rem;
+    color: #9E9E9E;
+    margin-bottom: 8px;
+}
+#graph-values {
+    display: flex;
+    flex-direction: column;
+}
+.graph-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graph-bar {
+    width: 16px;
+}
+.graph-eat {
+    height: 40px;
+    background-image: linear-gradient(#ffffff , #E2E2E2);
+}
+.graph-fast {
+    height: 100px;
+    background-image: linear-gradient(#FFCC00 , #ffffff);
+}
+.graph-day {
+    font-weight: 400;
 }

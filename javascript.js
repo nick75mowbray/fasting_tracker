@@ -22,7 +22,8 @@ $(document).ready(function(){
             display: 'block',
             width: '100%'
         },
-        // fill: 'rgba(0, 0, 0, 0.5)',
+        fill: 'rgba(255, 255, 50, 1)',
+        stroke: 2,
         duration: 1200,
         warnings: true
     });
