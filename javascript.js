@@ -4,8 +4,9 @@ $(document).ready(function(){
     // open hamburger menu
     $('#hamburger').on("click", function(){
         $('#menu-container').css('display', 'block');
-        $('.close').css('display', 'flex')
-    };
+        $('.close').css('display', 'flex');
+        
+    });
 
     function bmiCalc() {
 
@@ -61,9 +62,12 @@ $(document).ready(function(){
         
     }
 
-    bmiCalc();
+    // show BMI calculator
+    $('#BMI-li').on("click", function(){
+        bmiCalc();
+        $('main').css('display', 'none');
+        $('#menu-container').css('display', 'none');
     });
-
     //close hamburger menu
     $('#close').on("click", function(){
         $('#menu-container').css('display', 'none');
