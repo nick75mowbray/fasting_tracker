@@ -7,6 +7,9 @@
     <title>Fasting tracker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--Foundation (Bootstrap alternative)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     
 </head>
 <body>
@@ -35,9 +38,25 @@
         </div>
     </nav>
 
-    <div id="bmi-div">
+    <div id="bmi-page">
+        <div id="heading">
+            
+        </div>
+        <form id="bmi-form">
+            <div class="row" id="bmi-row">
+                <div id="bmi-div" class="large-3 columns">
 
+                </div>
+            </div>
+        </form>
+        <div id="results-head">
+            
+        </div>
+        <div id="results">
+
+        </div>
     </div>
+    
 <main>
     <div id="fasting-type">
         <h3 id="fasting-state-message">You're fasting!</h3>
@@ -133,6 +152,7 @@
     </div>
 </main>
     
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"

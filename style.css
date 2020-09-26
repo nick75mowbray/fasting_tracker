@@ -161,3 +161,27 @@ main {
 .graph-day {
     font-weight: 400;
 }
+/*BMI Calc div*/
+#bmi-div {
+    text-align: center;
+    margin-left: 50em;
+    margin-right: 50em;
+}
+
+.BMIinput {
+    width: 15em;
+}
+
+#heading {
+    text-align: center;
+}
+
+#results-head {
+    text-align: center;
+}
+
+#results {
+    justify-content: center;
+    margin-left: 50em;
+    margin-right: 50em;
+}

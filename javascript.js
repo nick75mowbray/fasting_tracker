@@ -8,22 +8,37 @@ $(document).ready(function(){
         
     });
 
+    //BMI Calculator
     function bmiCalc() {
 
+        $('#heading').empty();
+        $('#bmi-div').empty();
+        $('#results').empty();
+        
+
+        //heading
+        //$('#bmi-page').append('<div id="heading"></div>');
+        $('#heading').append('<h1 id="BMI-header">BMI Calculator</h1>');
+        $('#heading').append('<p id="BMI-para">Calculate your body mass index with your age, weight and height!</p>');
+        $('#BMI-para').append('<hr>');
+
+        //form
         $('#bmi-div').append('<label for="age" id="ageLabel">Age</label>');
-        $('#ageLabel').append('<input type="text" id="age"></input>');
+        $('#ageLabel').append('<input type="text" id="age" class="BMIinput"></input>');
         $('#ageLabel').append('<br>');
         $('#bmi-div').append('<label for="height" id="heightLabel">Height</label>');
-        $('#heightLabel').append('<input type="text" id="height"></input>');
+        $('#heightLabel').append('<input type="text" id="height" class="BMIinput"></input>');
         $('#heightLabel').append('<br>');
         $('#bmi-div').append('<label for="weight" id="weightLabel">Weight</label>');
-        $('#weightLabel').append('<input type="text" id="weight"></input>');
+        $('#weightLabel').append('<input type="text" id="weight" class="BMIinput"></input>');
         $('#weightLabel').append('<br>');
 
-        $('#bmi-div').append('<button id="submitBTN">submit</button>');
+        $('#bmi-div').append('<button class="button large" id="submitBTN">submit</button>');
 
         $('#submitBTN').on('click', function(event) {
             event.preventDefault();
+
+            $('#results').empty();
 
             let age = $('#age').val();
             let height = $('#height').val();
@@ -46,20 +61,22 @@ $(document).ready(function(){
             
             $.ajax(settings).done(function (response) {
                 console.log(response);
-                console.log()
 
                 let bmi = response.bmi;
                 let health = response.health;
                 let range = response.healthy_bmi_range;
 
-                $('#bmi-div').append('<h3>BMI: ' + bmi + '</h3>');
-                $('#bmi-div').append('<h3>Overall Health: ' + health + '</h3>');
-                $('#bmi-div').append('<h3>Healthy BMI Range: ' + range + '</h3>');
+                //results
+                $('#results-head').html('<hr>');
+                $('#results-head').append('<h3>Your BMI!</h3>');
+                $('#results').append('<hr>');
+                $('#results').append('<p><b>BMI</b>: ' + bmi.toFixed(2) + '</p>');
+                $('#results').append('<p><b>Overall Health</b>: ' + health + '</p>');
+                $('#results').append('<p><b>Healthy BMI Range</b>: ' + range + '</p>');
             });
         
         })
 
-        
     }
 
     // show BMI calculator
