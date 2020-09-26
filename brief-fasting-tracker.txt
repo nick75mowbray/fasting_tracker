@@ -1,0 +1,26 @@
+brief:
+fasting tracker
+
+core concept:
+fasting timer, user selects fast type:
+    -16/8, 18/6, 20/4.
+-lets them know when fast ends/ when to eat
+    -display countdown/ time fast ends
+-track the users progress/ previous fasts
+    -user tells app when they started fasting
+        -by pressing button 
+            -or-
+        -manually entering time
+
+    -user tells the app when they ended the fast
+        -by pressing button to end
+            -or-
+        -manually enter time ended
+-bar graph daily progress  for the week, hours fasted, hours eating.
+-user posts to twitter from app to share progress to twitter.
+
+added functions:
+-recipe finder
+-fasting advice
+-get tweets from fitness people.
+

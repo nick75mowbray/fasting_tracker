@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/e6f98328ec.js"></script>
+    <title>Fasting tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <!-- hamburger menu / side pop up -->
+    <nav id="menu">
+        <div id="side-pop-up">
+            <!-- hamburger icon -->
+            <div id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="menu-container" style="display: none;">
+                <div id="close">
+                    <p>close</p>
+                    <h3 id="close-icon">X</h3>
+                </div>
+                <ul id="menu-list">
+                    <li id="timer-li" class="menu-li">Fasting timer</li>
+                    <hr class="line">
+                    <li id="BMI-li" class="menu-li">BMI calculator</li>
+                    <hr class="line">
+                    <li id="calorie-li" class="menu-li">Calorie calculator</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bmi-div">
+
+    </div>
+<main>
+    <div id="fasting-type">
+        <h3 id="fasting-state-message">You're fasting!</h3>
+        <select id="type-selector">
+            <option class="fast-type" value="16-8" name="16-8">16-8</option>
+            <option class="fast-type" value="16-8" name="16-8">16-8</option>
+            <option class="fast-type" value="16-8" name="16-8">16-8</option>
+        </select>
+    </div>
+
+    <div id="timer">
+        <div id="timer-display">
+            <p id="elapsed-time">Elapsed time: 69%</p>
+            <h1 id="digits-display">0:00:00</h1>
+        </div>
+    </div>
+    <!-- <div id="circle-container"> -->
+        <div class="progress" id="progress">
+
+        <!-- </div> -->
+    </div>
+
+    <div id="start-finish-times">
+
+        <div id="start-container">
+            <p class="start-finish" id="started">Started fasting:</p>
+            <div class="edit-time-container">
+                <p class="time" id="time-started">8:00pm</p>
+                <p id="edit-start" class="edit">edit</p>
+            </div>
+        </div>
+
+        <div id="end-container">
+            <p class="start-finish" id="ended">End fast:</p>
+            <div class="edit-time-container">
+                <p class="time" id="time-ended">12:00pm</p>
+                <p id="edit-end" class="edit">edit</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- button -->
+    <button id="start-end-btn">END FAST</button>
+
+    <!-- progress graph -->
+    <div id="weekly-progress-container">
+        <h4>Weekly Progress</h4>
+        <div id="graph-container">
+            <div id="graph-values">
+                <p class="graph-label">24</p>
+                <p class="graph-label">20</p>
+                <p class="graph-label">16</p>
+                <p class="graph-label">14</p>
+                <p class="graph-label">10</p>
+                <p class="graph-label">6</p>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+            <div class="graph-column">
+                <div class="graph-eat graph-bar"></div>
+                <div class="graph-fast graph-bar"></div>
+                <h5 class="graph-day">MON</h5>
+            </div>
+        </div>
+    </div>
+</main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js" integrity="sha512-H3YjV/5Oi9ggWECfksg7G4F3ERL7tU/IAmsEQdVNwtollNU+ROpJyQVgrCYIMaIUoK/Ydew36X3VUXXXkYUm5w==" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

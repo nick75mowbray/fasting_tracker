@@ -1,0 +1,24 @@
+
+before wednesday 22/9
+-user stories
+-basic wireframes
+
+wednesday:
+-as group decide on design/html
+-style guide
+
+next steps:
+js components:
+-timer
+    -fasting time based on user selection 16/8 18/6 etc
+    -manually enter start/ end time
+    -end/ start with button
+-twitter api
+    -login with twitter
+   -post to twitter
+-BMI/weight tracker
+
+--if time--
+-graph previous fasts (local storage)
+    -previous week, graph for each day
+    -share last weeks progress to twitter
