@@ -43,7 +43,8 @@ li.menu-li {
 }
 #hamburger {
     padding: 15px;
-    position: absolute;
+    position: fixed;
+    top: 0px;
 }
 
 
@@ -90,8 +91,13 @@ main {
 #timer {
     margin: 30px;
 }
-#elapsed-time {
+#elapsed-div {
     color: #9E9E9E;
+    display: flex;
+    justify-content: center;
+}
+#elapsed-time {
+    margin-left: 5px;
 }
 /* start and finish times */
 #start-finish-times {
@@ -110,7 +116,11 @@ main {
     color: #9E9E9E;
 }
 /* button */
-#start-end-btn {
+#fast-btn {
+    display: flex;
+    justify-content: center;
+}
+#start-btn, #end-btn {
     background-color: #FFCC00;
     border: none;
     outline: none;
@@ -160,4 +170,24 @@ main {
 }
 .graph-day {
     font-weight: 400;
+}
+/* end fast time screen */
+#end-fast-screen {
+    text-align: center;
+}
+#message-container h3 {
+    color: #9E9E9E;
+}
+#close-fast-screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #9E9E9E;
+    padding: 10px;
+}
+#close-fast-screen h2 {
+    margin-left: 8px;
+}
+#congrats {
+    color: #FFCC00;
 }
