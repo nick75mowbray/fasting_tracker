@@ -3,10 +3,17 @@
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
+body {
+    padding: 0;
+    margin: 0;
+}
 /* side menu */
 #menu {
-    position: relative;
+    position: fixed;
     top: -40px;
+    left:-300px;
+    z-index: 3;
+    background-color: #ffffff;
 }
 #close {
     color: #9E9E9E;
@@ -52,12 +59,13 @@ li.menu-li {
     margin-left: 15px;
 }
 .line {
-    border-top: 1px solid #FFCC00;
+    border-top: 1px solid #a6fa5a;
     width: 200px;
 }
 /* main */
 main {
     text-align: center;
+    width: 100%;
 }
 /* message / type of fast selector */
 #fasting-type {
@@ -71,30 +79,31 @@ main {
     width: 100px;
     padding: 5px 5px 5px 20px;
     border-radius: 3px;
-    border: 1px solid #FFCC00;
+    border: 1px solid #a6fa5a;
 }
 .fast-type {
     padding-left: 15px;
 }
+#fasting-state-message {
+    color: #4e4e4e;
+    font-size: 20px;
+}
 /* timer display */
-#circle-container {
-    width: 300px;
-    height: 300px;
+.circle-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
-#progress {
-    height: 300px;
-}
-.progress > svg {
-    height: 100%;
-    display: block;
-}
-#timer {
-    margin: 30px;
+#digits-display {
+    color: #4e4e4e;
+    font-size: 3rem;
 }
 #elapsed-div {
     color: #9E9E9E;
     display: flex;
     justify-content: center;
+    font-size: 1rem;
 }
 #elapsed-time {
     margin-left: 5px;
@@ -109,7 +118,7 @@ main {
     justify-content: center;
 }
 .edit {
-    color: #FFCC00;
+    color: #a6fa5a;
     margin-left: 8px;
 }
 .start-finish {
@@ -121,11 +130,11 @@ main {
     justify-content: center;
 }
 #start-btn, #end-btn {
-    background-color: #FFCC00;
-    border: none;
+    background-color: #ffffff;
+    border: 2px solid #a6fa5a;
     outline: none;
-    color: #ffffff;
-    font-weight: bold;
+    color: #4e4e4e;
+    font-weight: 600;
     padding: 8px;
     width: 150px;
     border-radius: 5px;
@@ -134,7 +143,7 @@ main {
 /* weekly progress */
 #weekly-progress-container {
     box-shadow: 0 0 10px #cccccc;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     overflow: hidden;
     padding: 15px;
 }
@@ -166,7 +175,7 @@ main {
 }
 .graph-fast {
     height: 100px;
-    background-image: linear-gradient(#FFCC00 , #ffffff);
+    background-image: linear-gradient(#a6fa5a , #ffffff);
 }
 .graph-day {
     font-weight: 400;
@@ -214,6 +223,5 @@ main {
     margin-left: 8px;
 }
 #congrats {
-    color: #FFCC00;
-
+    color: #a6fa5a;
 }

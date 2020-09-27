@@ -3,8 +3,14 @@ $(document).ready(function(){
     
     // open hamburger menu
     $('#hamburger').on("click", function(){
-        $('#menu-container').css('display', 'block');
+        $('#menu').css('left', '0px');
         $('.close').css('display', 'flex');
+    });
+    
+    //close hamburger menu
+    $('#close').on("click", function(){
+        $('#menu').css('left', "-300px");
+        $('#hamburger').css('display', 'block');
     });
 
     //BMI Calculator
@@ -84,11 +90,7 @@ $(document).ready(function(){
         $('main').css('display', 'none');
         $('#menu-container').css('display', 'none');
     });
-    //close hamburger menu
-    $('#close').on("click", function(){
-        $('#menu-container').css('display', 'none');
-        $('#hamburger').css('display', 'block');
-    });
+   
 
 
     // timer
@@ -110,15 +112,13 @@ $(document).ready(function(){
         $('#start-btn').css("display", 'none');
         $('#end-btn').css('display', 'block');
     }
-
-var startMilli; 
+ 
     // start fast
     $('#start-btn').on("click", function(){
             startTime = moment().format('HH:mm:ss');
-            startMilli = new Date(Date.UTC());
-            startDay = moment().format('dd');
+            startDay = moment().calendar();
             endTime = moment().add(fastType, 'hours').format('HH:mm');
-            endDay = moment().add(fastType, 'hours').format('dd');
+            endDay = moment().add(fastType, 'hours').calendar();
             fasting=true;
             // show end fast button
             $('#start-btn').css("display", 'none');
@@ -126,21 +126,35 @@ var startMilli;
     }); 
 
     var refreshTimer;
+    var percent;
 
     refreshTimer = setInterval(function(){
-        if (startDay==moment().format('dd')){
-            $('#start-time').text("Today "+startTime);
-            $('#end-time').text("Tomorrow "+endTime);
-        }
+        $('#start-time').text(startDay);
+        $('#end-time').text(endDay);
         var timeDisplay = moment().subtract(startTime).format('HH:mm:ss');
         var elapsedTime = parseInt(fastType) - parseInt(timeDisplay);
+        percent = Math.round((parseInt(timeDisplay)+1)/(parseInt(fastType)+1)*100);
         if (fasting==true){
         $('#digits-display').text(timeDisplay);
         $('#elapsed-time').text(elapsedTime);
+        showPercent();
         }
+        
     }, 500);
+    // function to show percent / circle progress
     
-        // function to show end fast screen
+    function showPercent(){
+        $('#percent').text(percent+"%");
+        var circleClass = "p"+(percent.toString());
+        $('#circle').removeClass().addClass("progress-circle "+circleClass);
+        if (percent > 50){
+            $('#circle').addClass("over50"); 
+        }
+    };
+        
+    
+    
+    // function to show end fast screen
         
     function endFast(){
         $('main').css('display', 'none');
@@ -164,20 +178,5 @@ var startMilli;
     $('#end-btn').on("click", function(){
         endFast();
     });
-    // add this v back in if I get time
-
-    // // display today or yesterday in start day
-    // if (startDay==moment().format('dd')){
-    //     $('#start-day option:selected').val("Today");
-    // } else {
-    //     $('#start-day option:selected').val("Yesterday");
-    // }
-    // // display end day - today or tomorrow
-    // if (endDay==moment().format('dd')){
-    //     $('#end-day option:selected').val("Today");
-    // } else {
-    //     $('#end-day option:selected').val("Tomorrow");
-    // }
-    // // change start day and time if user changes it.
 
 }); //end document ready 
