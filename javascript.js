@@ -79,12 +79,69 @@ $(document).ready(function(){
 
     }
 
+
+    function calorieCalc(){
+        //Ingradient
+        $('#cal-div').append('<label for="ingradient" id="IngradientLabel">Ingradient</label>');
+        $('#IngradientLabel').append('<input type="text" id="Ingradient"></input>');
+        $('#IngradientLabel').append('<br>');
+      //  $('#IngradientLabel').append('<small>Format:1 large apple</small>');             
+      //  $('#IngradientLabel').append('<br>');
+
+        
+        $('#cal-div').append('<label for="quantity" id="IngradientQuantity">Quantity</label>');
+        $('#IngradientQuantity').append('<input type="number" id="Quantity"></input>');
+        $('#IngradientQuantity').append('<br>');
+        
+
+        $('#cal-div').append('<button id="submitBTN">submit</button>');
+
+        $('#submitBTN').on('click', function(event) {
+            event.preventDefault();
+            let ingrd=$('#Ingradient').val();
+             let quantity=$('#Quantity').val();
+            console.log(ingrd);
+            console.log(quantity);
+
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                //"url": "https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data?ingr=1%20large%20apple",
+               // "url": "https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data?ingr=" + ingrd + "",
+                  "url": "https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data?ingr=" +quantity + "%20" +ingrd + "",
+                             
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "edamam-edamam-nutrition-analysis.p.rapidapi.com",
+                    "x-rapidapi-key": "0157ded83emshe3bc01cf91c87e5p150d98jsnc0f8cffc1c49"
+                }
+            }
+            
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                let calories=response.calories;
+
+                $('#cal-div').append('<h3>Calories: ' + calories + '</h3>');
+
+            });
+        })
+    }
+
     // show BMI calculator
     $('#BMI-li').on("click", function(){
         bmiCalc();
         $('main').css('display', 'none');
         $('#menu-container').css('display', 'none');
     });
+
+     // show calorie calculator
+
+     $('#calorie-li').on("click",function(){
+        calorieCalc();
+        $('main').css('display', 'none');
+        $('#menu-container').css('display', 'none');
+    });
+
     //close hamburger menu
     $('#close').on("click", function(){
         $('#menu-container').css('display', 'none');
