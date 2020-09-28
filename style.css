@@ -194,6 +194,7 @@ main {
 
 #heading {
     text-align: center;
+    justify-content: center;
 }
 
 #results-head {
@@ -204,6 +205,14 @@ main {
     justify-content: center;
     margin-left: 50em;
     margin-right: 50em;
+}
+
+.firstPara {
+    justify-content: center;
+}
+
+.column {
+    justify-content: center;
 }
 /* end fast time screen */
 #end-fast-screen {
