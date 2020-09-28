@@ -146,6 +146,7 @@ main {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
     padding: 15px;
+    width: 100vw;
 }
 #graph-container {
     display: flex;
@@ -160,6 +161,8 @@ main {
 #graph-values {
     display: flex;
     flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
 }
 .graph-column {
     display: flex;
@@ -170,16 +173,12 @@ main {
     width: 16px;
 }
 .graph-eat {
-    height: 40px;
     background-image: linear-gradient(#ffffff , #E2E2E2);
 }
 .graph-fast {
-    height: 100px;
     background-image: linear-gradient(#a6fa5a , #ffffff);
 }
-.graph-day {
-    font-weight: 400;
-}
+
 
 /*BMI Calc div*/
 #bmi-div {
