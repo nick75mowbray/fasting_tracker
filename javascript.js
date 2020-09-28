@@ -3,9 +3,14 @@ $(document).ready(function(){
     
     // open hamburger menu
     $('#hamburger').on("click", function(){
-        $('#menu-container').css('display', 'block');
+        $('#menu').css('left', '0px');
         $('.close').css('display', 'flex');
-        
+    });
+    
+    //close hamburger menu
+    $('#close').on("click", function(){
+        $('#menu').css('left', "-300px");
+        $('#hamburger').css('display', 'block');
     });
 
     //BMI Calculator
@@ -85,25 +90,93 @@ $(document).ready(function(){
         $('main').css('display', 'none');
         $('#menu-container').css('display', 'none');
     });
-    //close hamburger menu
-    $('#close').on("click", function(){
-        $('#menu-container').css('display', 'none');
-        $('#hamburger').css('display', 'block');
+   
+
+
+    // timer
+
+    var fasting = false;
+    var startTime = "";
+    var startDay = "";
+    var endTime = "";
+    var endDay = "";
+
+    // get value of fasting type
+    var fastType = $('#type-selector').val();
+
+    // add button to page'
+    if (fasting === false){
+        $('#start-btn').css("display", 'block');
+        $('#end-btn').css('display', 'none');
+    } else {
+        $('#start-btn').css("display", 'none');
+        $('#end-btn').css('display', 'block');
+    }
+ 
+    // start fast
+    $('#start-btn').on("click", function(){
+            startTime = moment().format('HH:mm:ss');
+            startDay = moment().calendar();
+            endTime = moment().add(fastType, 'hours').format('HH:mm');
+            endDay = moment().add(fastType, 'hours').calendar();
+            fasting=true;
+            // show end fast button
+            $('#start-btn').css("display", 'none');
+            $('#end-btn').css('display', 'block');
+    }); 
+
+    var refreshTimer;
+    var percent;
+
+    refreshTimer = setInterval(function(){
+        $('#start-time').text(startDay);
+        $('#end-time').text(endDay);
+        var timeDisplay = moment().subtract(startTime).format('HH:mm:ss');
+        var elapsedTime = parseInt(fastType) - parseInt(timeDisplay);
+        percent = Math.round((parseInt(timeDisplay)+1)/(parseInt(fastType)+1)*100);
+        if (fasting==true){
+        $('#digits-display').text(timeDisplay);
+        $('#elapsed-time').text(elapsedTime);
+        showPercent();
+        }
+        
+    }, 500);
+    // function to show percent / circle progress
+    
+    function showPercent(){
+        $('#percent').text(percent+"%");
+        var circleClass = "p"+(percent.toString());
+        $('#circle').removeClass().addClass("progress-circle "+circleClass);
+        if (percent > 50){
+            $('#circle').addClass("over50"); 
+        }
+    };
+        
+    
+    
+    // function to show end fast screen
+        
+    function endFast(){
+        $('main').css('display', 'none');
+        $('#end-fast-screen').css('display', 'block');
+        var fastEnded = moment().subtract(startTime).format('HH:mm:ss');
+        $('#final-time').text(fastEnded);
+        console.log("end fast working");
+        // reset variables 
+        fasting = false;
+        startTime = "";
+        startDay = "";
+        endTime = "";
+        endDay = "";
+    }
+    // close end screen
+    $('#close-fast-screen').on("click", function(){
+        $('#end-fast-screen').css('display', 'none');
+        $('main').css('display', 'block');
     });
-
-
-    var progressBar = new ProgressBar.Circle('#progress', {
-        color: '#FFCC00',
-        strokeWidth: 5,
-        trailWidth: 0.8,
-        svgStyle: {
-            display: 'block',
-            width: '100%'
-        },
-        fill: 'rgba(255, 255, 50, 1)',
-        stroke: 2,
-        duration: 1200,
-        warnings: true
+    
+    $('#end-btn').on("click", function(){
+        endFast();
     });
 
 }); //end document ready 
