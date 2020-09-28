@@ -7,10 +7,12 @@
     <title>Fasting tracker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!--Foundation (Bootstrap alternative)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css-circular-prog-bar.css">
+    
+    <!--Bulma-->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" type="text/css" rel="stylesheet">
+    
+    
 </head>
 <body>
     <!-- hamburger menu / side pop up -->
@@ -38,26 +40,7 @@
         </div>
     </nav>
 <main>
-    <div id="bmi-page">
-        <div id="heading">
-            
-        </div>
-        <form id="bmi-form">
-            <div class="row" id="bmi-row">
-                <div id="bmi-div" class="large-3 columns">
-
-                </div>
-            </div>
-        </form>
-        <div id="results-head">
-            
-        </div>
-        <div id="results">
-
-        </div>
-    </div>
     
-
     <div id="fasting-type">
         <h3 id="fasting-state-message">You're fasting!</h3>
         <select id="type-selector">
@@ -127,24 +110,45 @@
             <!-- graph columns go here -->
         </div>
     </div>
+
 </main>
 
 <!-- fasting time sceen (displays when the user clicks end fast btn) -->
-    <div id="end-fast-screen" style="display: none;">
-        <div id="close-fast-screen">
-            <h4>close </h4>
-            <h2>&#215</h2>
-        </div>
-        <div id="message-container">
-            <h3>You fasted:</h3>
-            <h1 id="final-time">00:00:00</h1>
-            <h2 id="congrats">congradulations!</h2>
-        </div>
+<div id="end-fast-screen" style="display: none;">
+    <div id="close-fast-screen">
+        <h4>close </h4>
+        <h2>&#215</h2>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <div id="message-container">
+        <h3>You fasted:</h3>
+        <h1 id="final-time">00:00:00</h1>
+        <h2 id="congrats">congradulations!</h2>
+    </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js"></script>
+<div id="bmi-page">
+    <div id="heading">
+        
+    </div>
+    <form id="bmi-form" class="has-text-centered">
+        
+            <div class="columns is-centered">
+                <div id="bmi-div" class="column">
+
+
+                </div>
+
+            </div>
+        
+    </form>
+    <div id="results-head">
+        
+    </div>
+    <div id="results">
+
+    </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
