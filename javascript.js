@@ -232,13 +232,10 @@ function storeCurrrentFast() {
         } else {
             previousFasts.unshift(parseInt(fastEnded));
         }
-        
-        console.log(previousFasts);
         storePrevious();
     }
 
     // previous fasts graph
-    console.log(previousFasts);
     function showPreviousFasts(){
     for (var i = 0; i < previousFasts.length; i++){
         var graphDiv = $("<div class='graph-column'></div>");
@@ -247,7 +244,7 @@ function storeCurrrentFast() {
         if (previousFasts[i] <= 6){
             graphFast.css("height", "10px");
             console.lo
-            graphEat.css("height", "170px");
+            graphEat.css("height", "190px");
         } else {
             graphFast.css("height", (previousFasts[i]-6)*10+"px");
             graphEat.css("height", (200-(previousFasts[i]-6)*10)+"px");
