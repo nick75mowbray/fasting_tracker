@@ -160,6 +160,7 @@ main {
 #graph-values {
     display: flex;
     flex-direction: column;
+    height: 200px;
 }
 .graph-column {
     display: flex;
@@ -177,9 +178,7 @@ main {
     height: 100px;
     background-image: linear-gradient(#a6fa5a , #ffffff);
 }
-.graph-day {
-    font-weight: 400;
-}
+
 
 /*BMI Calc div*/
 #bmi-div {

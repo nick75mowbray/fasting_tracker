@@ -69,13 +69,13 @@
 
 <div class="circle-timer-container">
     <!-- progress circle -->
-        <div id="circle" class="progress-circle p60">
+        <div id="circle" class="progress-circle p1">
             <div id="circle-text">
                 <div id="elapsed-div">
                     <p>Hours to go: </p>
                     <p id="elapsed-time"></p>
                 </div>
-                <span id="percent">10%</span>
+                <span id="percent">0%</span>
                     <div id="timer-display">
                         <h1 id="digits-display">0:00:00</h1>
                     </div>
@@ -94,12 +94,6 @@
             <p class="start-finish" id="started">Started fasting:</p>
             <div class="edit-time-container">
                 <p id="start-time"></p>
-                <!-- add this back in if I have time -->
-                <!-- <select id="start-day">
-                    <option value="today" name="start-today">Today</option>
-                    <option value="yesterday" name="start-yesterday">Yesterday</option>
-                </select> 
-                <input type="time" name="start-time" id="start-time-input" value="">-->
             </div>
         </div>
 
@@ -107,12 +101,6 @@
             <p class="start-finish" id="ended">End fast:</p>
             <div class="edit-time-container">
                 <p id="end-time"></p>
-                <!-- add this back in if I have time -->
-                <!-- <select id="end-day">
-                    <option value="Tomorrow" name="end-today">Tomorrow</option>
-                    <option value="Today" name="end-yesterday">Today</option>
-                </select>
-                <input type="time" name="end-time" id="end-time-input" value=""> -->
             </div>
         </div>
     </div>
@@ -126,7 +114,7 @@
 
     <!-- progress graph -->
     <div id="weekly-progress-container">
-        <h4>Weekly Progress</h4>
+        <h4>Previous Fasts:</h4>
         <div id="graph-container">
             <div id="graph-values">
                 <p class="graph-label">24</p>
@@ -136,41 +124,7 @@
                 <p class="graph-label">10</p>
                 <p class="graph-label">6</p>
             </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
-            <div class="graph-column">
-                <div class="graph-eat graph-bar"></div>
-                <div class="graph-fast graph-bar"></div>
-                <h5 class="graph-day">MON</h5>
-            </div>
+            <!-- graph columns go here -->
         </div>
     </div>
 
