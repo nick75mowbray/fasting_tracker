@@ -16,9 +16,9 @@ $(document).ready(function(){
     //BMI Calculator
     function bmiCalc() {
 
-        $('#heading').empty();
-        $('#bmi-div').empty();
-        $('#results').empty();
+        //$('#heading').empty();
+        //$('#bmi-div').empty();
+        //$('#results').empty();
         
 
         //heading
@@ -86,6 +86,7 @@ $(document).ready(function(){
 
     // show BMI calculator
     $('#BMI-li').on("click", function(){
+        console.log('BMI Calculator');
         bmiCalc();
         $('main').css('display', 'none');
         $('#menu-container').css('display', 'none');
