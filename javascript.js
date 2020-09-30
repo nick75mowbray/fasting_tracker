@@ -248,7 +248,8 @@ function storeCurrrentFast() {
         // show end fast button
         $('#start-btn').css("display", 'block');
         $('#end-btn').css('display', 'none');
-        
+        // update show previous fasts
+        showPreviousFasts();
     }    
     $('#end-btn').on("click", function(){
         endFast();
@@ -256,21 +257,31 @@ function storeCurrrentFast() {
 
     // previous fasts graph
     function showPreviousFasts(){
+    // check if any fasts are stored in local storage
+    $('#graph-container').empty();
+    if (previousFasts.length >= 1){
+        var graphValDiv = $("<div id='graph-values'></div>");
+        for (var i = 24;i > 5; i = i-2){
+            var graphLabel = $("<p class='graph-label'>"+i+"</p>");
+            graphValDiv.append(graphLabel);
+        }
+        $('#graph-container').append(graphValDiv);
     for (var i = 0; i < previousFasts.length; i++){
         var graphDiv = $("<div class='graph-column'></div>");
         var graphEat = $("<div class='graph-eat graph-bar'></div>");
         var graphFast  = $("<div class='graph-bar graph-fast'></div>");
+        // calculate bar height
         if (previousFasts[i] <= 6){
             graphFast.css("height", "10px");
-            console.lo
             graphEat.css("height", "190px");
         } else {
             graphFast.css("height", (previousFasts[i]-6)*10+"px");
             graphEat.css("height", (200-(previousFasts[i]-6)*10)+"px");
         }
-        graphDiv.append(graphEat, graphFast);
+        graphDiv.append(graphEat, graphFast)
         $('#graph-container').append(graphDiv);
-    }
+    
+    }}
     };
     showPreviousFasts();
 
@@ -280,8 +291,22 @@ function storeCurrrentFast() {
         $('main').css('display', 'block');
     });
     
-
-
+// function to load example values
+function demo(){
+    previousFasts = [12, 20, 19, 14, 12, 15, 18];
+    console.log("demo working");
+    showPreviousFasts();
+    // get value of fasting type
+    start.type = $('#type-selector').val();
+    start.hours = moment().add(10, 'hours').format('HH:mm:ss');
+    start.minutes = moment().add(10, 'hours').format('mm');
+    start.day = moment().add(10, 'hours').calendar();
+    start.endtime = moment().add(start.type, 'hours').format('HH:mm');
+    start.endday = moment().add(start.type, 'hours').calendar();
+    start.fasting = true;
+    storeCurrrentFast();
+}
+$('#demo-values').on("click", demo);
 
 
 
