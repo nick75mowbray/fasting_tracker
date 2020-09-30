@@ -7,6 +7,9 @@
     <title>Fasting tracker</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- circle progress bar stylesheet from https://tiagobalmeida.github.io/posts/making-a-pure-css-circular-progress-bar.html -->
+    <!-- it creates a circle in css/html and rotates it to show different percentages
+    the circle is assigned a different class depending on the required percentage -->
     <link rel="stylesheet" type="text/css" href="css-circular-prog-bar.css">
     
     <!--Bulma-->
@@ -106,18 +109,11 @@
     <div id="weekly-progress-container">
         <h4>Previous Fasts:</h4>
         <div id="graph-container">
-            <div id="graph-values">
-                <p class="graph-label">24</p>
-                <p class="graph-label">20</p>
-                <p class="graph-label">16</p>
-                <p class="graph-label">14</p>
-                <p class="graph-label">10</p>
-                <p class="graph-label">6</p>
-            </div>
-            <!-- graph columns go here -->
+            
         </div>
     </div>
 
+    <p id="demo-values" style="font-size: 0.6em;">run demo</p>
 </main>
 
 

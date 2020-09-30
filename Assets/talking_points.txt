@@ -1,0 +1,19 @@
+Talking points:
+
+-bulma / styling - Jake
+
+-fasting tracker - Nick
+    -timer (moment.js)
+    -local storage
+    -percentage indicator
+    -previous fasts graph
+
+-bmi calculator - Arun
+    -api
+
+-calorie calculator - Arun
+    -api
+
+-NewYork times article viewer - Jake
+    -api
+    -styling.

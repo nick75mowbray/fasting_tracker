@@ -159,7 +159,8 @@ main {
 }
 /* weekly progress */
 #weekly-progress-container {
-    box-shadow: 0 0 10px #cccccc;
+    box-shadow: inset 0 7px 9px -7px #cccccc;
+    margin-top: 10px;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
     padding: 15px;
