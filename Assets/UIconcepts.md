@@ -4,16 +4,17 @@
 
 Some of them had nice functionality but are mostly for UI inspiration
 
-![zeroUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/ZeroUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/ZeroUI.png" height="250">
 
-![getVoraUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/getVoraUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/getVoraUI.png" height="250">
 
-![fastientUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/FastientUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/FastientUI.png" height="250">
 
-![LifeUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/LifeUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/LifeUI.png" height="250">
 
-![doFastingUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/doFastingUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/doFastingUI.png" height="250">
 
+<br>
 
 #### And these are the UI designs we settled on.
 
