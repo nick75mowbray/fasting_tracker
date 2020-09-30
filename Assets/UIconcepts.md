@@ -1,13 +1,21 @@
 ## UI Ideas/Inspiration
 
-![ZeroUI](/Assets/ZeroUI.png){:height="250px"}
-<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/ZeroUI.png" height="250">
+#### These are a few UI concepts we found and liked the look of.
 
-![getVoraUI](/Assets/getVoraUI.png | height=100)
+Some of them had nice functionality but are mostly for UI inspiration
 
-![fastientUI](/Assets/FastientUI.png | height=100)
+![zeroUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/ZeroUI.png" height="250">
 
-![LifeUI](/Assets/LifeUI.png | height=100)
+![getVoraUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/getVoraUI.png" height="250">
 
-![doFastingUI](/Assets/doFastingUI.png | height=100)
+![fastientUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/FastientUI.png" height="250">
 
+![LifeUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/LifeUI.png" height="250">
+
+![doFastingUI]<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/doFastingUI.png" height="250">
+
+
+#### And these are the UI designs we settled on.
+
+[UI wireframe and design concept](/Assets/fasting_tracker_UI_nick.xd)
+requires adobe XD to open
