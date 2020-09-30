@@ -20,7 +20,10 @@ requires adobe XD to open
 
 ### With these colour options.
 
-<img alt="#6681fa" src="https://github.com/nick75mowbray/project1/blob/master/Assets/6681fa.png" height="250"><img alt="#a6fa5a" src="https://github.com/nick75mowbray/project1/blob/master/Assets/a6fa5a.png" height="250">
+| #### #6681fa | #### #a6fa5a|
+|:------------:|:-----------:|
+|<img alt="#6681fa" src="https://github.com/nick75mowbray/project1/blob/master/Assets/6681fa.png" height="250">|<img alt="#a6fa5a" src="https://github.com/nick75mowbray/project1/blob/master/Assets/a6fa5a.png" height="250">|
+
 #### #6681fa
 #### #a6fa5a
 
