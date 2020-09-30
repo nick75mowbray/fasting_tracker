@@ -21,47 +21,27 @@
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-    <nav id="menu">
+    <nav id="menu" style="display: none;">
         <div id="side-pop-up">
             <!-- hamburger icon -->
             <div id="menu-container">
                 <div id="close">
                     <p>close</p>
-                    <h3 id="close-icon">X</h3>
+                    <p id="close-icon">&#215</p>
                 </div>
                 <ul id="menu-list">
-                    <li id="timer-li" class="menu-li">Fasting timer</li>
+                    <a href="index.html">
+                    <li id="timer-li" class="menu-li">Fasting timer</li></a>
                     <hr class="line">
-                    <li id="BMI-li" class="menu-li">BMI calculator</li>
+                    <a href="bmi.html">
+                    <li id="BMI-li" class="menu-li">BMI calculator</li></a>
                     <hr class="line">
-                    <li id="calorie-li" class="menu-li">Calorie calculator</li>
+                    <a href="caloriecalc.html">
+                    <li id="calorie-li" class="menu-li">Calorie calculator</li></a>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div id="bmi-page">
-        <div id="heading">
-            
-        </div>
-        <form id="bmi-form">
-            <div class="row" id="bmi-row">
-                <div id="bmi-div" class="large-3 columns">
-
-                </div>
-            </div>
-        </form>
-        <div id="results-head">
-            
-        </div>
-        <div id="results">
-
-        </div>
-    </div>
-
-    <div id="cal-div">
-        
-    </div>
     
 <main>
     
@@ -137,11 +117,14 @@
 
 </main>
 
+
+
+
 <!-- fasting time sceen (displays when the user clicks end fast btn) -->
 <div id="end-fast-screen" style="display: none;">
     <div id="close-fast-screen">
-        <h4>close </h4>
-        <h2>&#215</h2>
+            <p>close</p>
+            <p id="close-icon">&#215</p>
     </div>
 
     <div id="message-container">
@@ -151,28 +134,6 @@
     </div>
 </div>
 
-<div id="bmi-page">
-    <div id="heading">
-        
-    </div>
-    <form id="bmi-form" class="has-text-centered">
-        
-            <div class="columns is-centered">
-                <div id="bmi-div" class="column">
-
-
-                </div>
-
-            </div>
-        
-    </form>
-    <div id="results-head">
-        
-    </div>
-    <div id="results">
-
-    </div>
-</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/e6f98328ec.js"></script>
+    <title>Calorie Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css-circular-prog-bar.css">
+    
+    <!--Bulma-->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+        <!-- hamburger menu / side pop up -->
+        <div id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="menu" style="display: none;">
+            <div id="side-pop-up">
+                <!-- hamburger icon -->
+                <div id="menu-container">
+                    <div id="close">
+                        <p>close</p>
+                        <p id="close-icon">&#215</p>
+                    </div>
+                    <ul id="menu-list">
+                        <a href="index.html">
+                        <li id="timer-li" class="menu-li">Fasting timer</li></a>
+                        <hr class="line">
+                        <a href="bmi.html">
+                        <li id="BMI-li" class="menu-li">BMI calculator</li></a>
+                        <hr class="line">
+                        <a href="caloriecalc.html">
+                        <li id="calorie-li" class="menu-li">Calorie calculator</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div style="margin-top: 40px;" class="has-text-centered">
+            <div class="columns is-centered">
+                <div id="cal-div" class="column">
+                    <label for="ingradient" class="label has-text-weight-light" id="IngradientLabel">Ingredient: 
+                    </label>
+                    <input type="text" id="Ingradient" class="BMIinput"></input> 
+            
+                    <label for="quantity" class="label has-text-weight-light" id="IngradientQuantity">Quantity</label>
+                    <input type="number" id="Quantity" class="BMIinput"></input>
+            
+                    <br>
+                    <button id="submitBTN" class="submit button is-outlined is-success">submit</button>
+                </div>
+            </div>
+        </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.0/progressbar.min.js" integrity="sha512-H3YjV/5Oi9ggWECfksg7G4F3ERL7tU/IAmsEQdVNwtollNU+ROpJyQVgrCYIMaIUoK/Ydew36X3VUXXXkYUm5w==" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</body>
+</html>

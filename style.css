@@ -10,15 +10,15 @@ body {
 /* side menu */
 #menu {
     position: fixed;
-    top: -40px;
-    left:-300px;
     z-index: 3;
+    top: -40px;
     background-color: #ffffff;
 }
-#close {
+#close, #close-fast-screen {
     color: #9E9E9E;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 #timer-div {
@@ -41,6 +41,12 @@ div.bar {
     padding: 20px;
     margin-top: 40px;
 }
+a li {
+    color: #4e4e4e;
+}
+a li:hover {
+    font-weight: 600;
+}
 ul {
     list-style: none;
 }
@@ -53,10 +59,17 @@ li.menu-li {
     position: fixed;
     top: 0px;
 }
-
+div.bar {
+    background-color: #cccccc;
+}
+#close:hover, #close-fast-screen:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
 
 #close-icon {
     margin-left: 15px;
+    font-size: 25px;
 }
 .line {
     border-top: 1px solid #a6fa5a;
@@ -80,6 +93,10 @@ main {
     padding: 5px 5px 5px 20px;
     border-radius: 3px;
     border: 1px solid #a6fa5a;
+}
+#type-selector:hover {
+    outline: 2px solid #a6fa5a;
+    -moz-outline-radius: 3px;
 }
 .fast-type {
     padding-left: 15px;
@@ -117,10 +134,6 @@ main {
     display: flex;
     justify-content: center;
 }
-.edit {
-    color: #a6fa5a;
-    margin-left: 8px;
-}
 .start-finish {
     color: #9E9E9E;
 }
@@ -139,6 +152,10 @@ main {
     width: 150px;
     border-radius: 5px;
     margin: 25px 0;
+}
+#start-btn:hover, #end-btn:hover {
+    background-color: #a5fa5a73;
+    font-weight: 700;
 }
 /* weekly progress */
 #weekly-progress-container {
@@ -183,12 +200,11 @@ main {
 /*BMI Calc div*/
 #bmi-div {
     text-align: center;
-    margin-left: 50em;
-    margin-right: 50em;
 }
 
 .BMIinput {
     width: 15em;
+    margin-bottom: 15px;
 }
 
 #heading {
@@ -202,12 +218,12 @@ main {
 
 #results {
     justify-content: center;
-    margin-left: 50em;
-    margin-right: 50em;
+    margin-left: 10vw;
 }
 
 .firstPara {
     justify-content: center;
+    color: #4e4e4e;
 }
 
 .column {
@@ -219,6 +235,10 @@ main {
 }
 #message-container h3 {
     color: #9E9E9E;
+    font-size: 1.2em;
+}
+#message-container h1 {
+    font-size: 3em;
 }
 #close-fast-screen {
     display: flex;
@@ -232,4 +252,5 @@ main {
 }
 #congrats {
     color: #a6fa5a;
+    font-size: 1.5em;
 }
