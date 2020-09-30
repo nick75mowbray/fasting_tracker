@@ -281,7 +281,49 @@ function storeCurrrentFast() {
     });
     
 
+    //NYT article function
+    function NYTquery() {
 
+        //let healthFitness = 'Health & Fitness';
+
+        let queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Health%20%26%20Fitness&api-key=tZIiJgEGHbCV0KpFDgTXFHQH8FF0pLDt";
+        
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+
+        .then(function(response) {
+            console.log(response);
+            console.log(response.response.docs);
+            console.log(response.response.docs[1].multimedia[19].url);
+
+            $('#articleIMG1').append('<a href="' + response.response.docs[2].web_url + '" target="blank"><img src="https://static01.nyt.com/' + response.response.docs[2].multimedia[19].url + '"></a>');
+
+            $('#articleHead1').append('<a href="' + response.response.docs[2].web_url + '" target="blank"><h2>' + response.response.docs[2].headline.main +'</h2></a>');
+            $('#articleHead1').append('<p><strong>' + response.response.docs[2].snippet +'</strong></p>');
+            $('#articleHead1').append('<p>' + response.response.docs[2].pub_date +'</p>');
+
+            $('#articleIMG2').append('<a href="' + response.response.docs[3].web_url + '" target="blank"><img src="https://static01.nyt.com/' + response.response.docs[3].multimedia[19].url + '"></a>');
+
+            $('#articleHead2').append('<a href="' + response.response.docs[3].web_url + '" target="blank"><h2>' + response.response.docs[3].headline.main +'</h2></a>');
+            $('#articleHead2').append('<p><strong>' + response.response.docs[3].snippet +'</strong></p>');
+            $('#articleHead2').append('<p>' + response.response.docs[3].pub_date +'</p>');
+
+            $('#articleIMG3').append('<a href="' + response.response.docs[5].web_url + '" target="blank"><img src="https://static01.nyt.com/' + response.response.docs[5].multimedia[19].url + '"></a>');
+
+            $('#articleHead3').append('<a href="' + response.response.docs[5].web_url + '" target="blank"><h2>' + response.response.docs[5].headline.main +'</h2></a>');
+            $('#articleHead3').append('<p><strong>' + response.response.docs[5].snippet +'</strong></p>');
+            $('#articleHead3').append('<p>' + response.response.docs[5].pub_date +'</p>');
+        })
+        
+    }
+
+    // Show NYT articles
+    $(window).on("load",function(event) {
+        event.preventDefault();
+        NYTquery();
+    })
 
 
 
