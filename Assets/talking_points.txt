@@ -1,0 +1,45 @@
+Talking points:
+
+-bulma / styling - Jake
+
+-fasting tracker - Nick
+    -timer (moment.js)
+    -local storage
+    -percentage indicator
+    -previous fasts graph
+
+-bmi calculator - Arun
+    -api
+
+-calorie calculator - Arun
+    -api
+
+-NewYork times article viewer - Jake
+    -api
+    -styling.
+
+Elevator pitch: a one minute description of your application
+
+
+Concept: What is your user story? What was your motivation for development?
+
+
+Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+    styling-bulma
+    api's:  -bmi calculator
+            -calorie calculator
+            -new york times article viewer
+
+    html and css only circle progress bar
+    moment.js
+    local storage
+
+Demo: Show your stuff!
+
+
+Directions for Future Development
+-notifications for when fast ends
+-more indepth calorie calculator
+    -save previous meals
+    -calculate calories consumed in a day
+    -save previous daily calorie intake
