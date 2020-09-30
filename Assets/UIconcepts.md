@@ -1,12 +1,12 @@
 ## UI Ideas/Inspiration
 
-![ZeroUI](Assets/zeroUI.png)
+![ZeroUI](/Assets/ZeroUI.png)
 
-![getVoraUI](Assets/getVoraUI.png)
+![getVoraUI](/Assets/getVoraUI.png)
 
-![fastientUI](Assets/FastientUI.png)
+![fastientUI](/Assets/FastientUI.png)
 
-![LifeUI](Assets/LifeUI.png)
+![LifeUI](/Assets/LifeUI.png)
 
-![doFastingUI](Assets/doFastingUI.png)
+![doFastingUI](/Assets/doFastingUI.png)
 
