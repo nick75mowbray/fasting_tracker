@@ -1,7 +1,7 @@
 ## UI Ideas/Inspiration
 
 ![ZeroUI](/Assets/ZeroUI.png){:height="250px"}
-<img src="/Assets.ZeroUI.png" height="250">
+<img src="https://github.com/nick75mowbray/project1/blob/master/Assets/ZeroUI.png" height="250">
 
 ![getVoraUI](/Assets/getVoraUI.png | height=100)
 
