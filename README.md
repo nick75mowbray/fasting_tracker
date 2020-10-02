@@ -1,5 +1,5 @@
 # fasting timer
-[Click here to got to site](https://nick75mowbray.github.io/project1/)
+[Click here to go to site](https://nick75mowbray.github.io/project1/)
 ## Overview/ features:
 This is an intermittent fasting application designed to help users to keep track of when to eat and when to fast. It also contains useful information and calculators including a BMI and calorie calculator as well as links to useful articles.
 ![screenshot of main page](./screenshots/desktop.jpg)
