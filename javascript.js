@@ -94,8 +94,9 @@ $('li.menu-li').on("click", closeMenu);
                 console.log(response);
                 let calories=response.calories;
 
-                $('#cal-div').append('<h3>Calories: ' + calories + '</h3>');
-
+                //results
+                $('#cal-results').append('<hr>');
+                $('#cal-results').append('<p class="lead"><b>Calories: </b>' + calories + '</p>');
             });
         })
     }
@@ -154,12 +155,7 @@ function storeCurrrentFast() {
 
     // get value of fasting type
     start.type = $('#type-selector').val();
-    // show fasting message
-    if (start.fasting===true){
-        $('#fasting-state-message').text("You're fasting!")
-    } else {
-        $('#fasting-state-message').text("");
-    }
+    
 
     // add button to page'
     if (start.fasting === false){
@@ -206,7 +202,14 @@ function storeCurrrentFast() {
         $('#elapsed-time').text(elapsedTime);
         showPercent();
         }
-        
+        // show fasting message
+        if (start.fasting===true){
+        $('#fasting-state-message').text("You're fasting!");
+        $('#start-finish-times').css("display", "flex");
+        } else {
+        $('#fasting-state-message').text("");
+        $('#start-finish-times').css("display", "none");
+        }
     }, 500);
 
 

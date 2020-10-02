@@ -88,7 +88,6 @@ main {
     text-align: center;
 }
 #type-selector {
-    margin-top: 10px;
     width: 100px;
     padding: 5px 5px 5px 20px;
     border-radius: 3px;
@@ -104,6 +103,11 @@ main {
 #fasting-state-message {
     color: #4e4e4e;
     font-size: 20px;
+}
+.select-text {
+    color: #9E9E9E;
+    font-weight: 300;
+    margin-top: 10px;
 }
 /* timer display */
 .circle-timer-container {
@@ -165,11 +169,16 @@ main {
     overflow: hidden;
     padding: 15px;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #graph-container {
     display: flex;
     margin-top: 10px;
     justify-content: space-around;
+    max-width: 600px;
+    width: 100%;
 }
 .graph-label {
     font-size: 0.8rem;
@@ -217,10 +226,11 @@ main {
     text-align: center;
 }
 
-#results {
+#results, .results {
     justify-content: center;
     margin-left: 10vw;
 }
+
 
 .firstPara {
     justify-content: center;
