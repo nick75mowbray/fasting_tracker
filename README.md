@@ -13,8 +13,12 @@ When a user ends a fast they are presented with their time and the fasting time 
 # Previous fasts graph:
 The users previous fast are stored in local storage as an array, that data is then used to render a bar graph to the page. The height of the bars is determined by calculating pixel height of the values representing the number of hours fasted.
 # BMI calculator:
+The user can utilise this simple BMI calculator to get data on their body mass index, ultimately assisting keeping their overall health in check and to see where healthy adjustments might need to be made.
 # Calorie calculator:
+This part of the application is able to take the users input of the desired food and then an amount for example 2 eggs, and show them a calorie value to help with controling their calorie intake. This section is also designed to, in the future, take data provided by personal calorie burning trackers to then keep a live reading of daily calorie intake and calories burnt using the calculator, local storage and the data provided by a thrid party technology.
 # Resources page:
+The user can navigate over to the resources page to quickly grab some information. For the moment we've used just a New York Times article search to give articles related in some way to health and fitness, with plans to add more assisting information. For example we would add a recipe generator, it can be random or selected from a list provided and will feature filters to control dietary requirements or preferred ingredients. I will also use the main fasting timer to link up with and if the option is selected it can provide them with a recipe suggestion. 
+This section is also open to whatever information the user requires.
 # Screenshots:
 ![screenshot of timer not started](./screenshots/timer-not-started.jpg)
 ![screenshot of timer started](./screenshots/timer-started.jpg)
