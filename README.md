@@ -14,6 +14,7 @@ When a user ends a fast they are presented with their time and the fasting time 
 The users previous fast are stored in local storage as an array, that data is then used to render a bar graph to the page. The height of the bars is determined by calculating pixel height of the values representing the number of hours fasted.
 # BMI calculator:
 The user can utilise this simple BMI calculator to get data on their body mass index, ultimately assisting keeping their overall health in check and to see where healthy adjustments might need to be made.
+(https://rapidapi.com/malaaddincelik/api/fitness-calculator)
 # Calorie calculator:
 This part of the application is able to take the users input of the desired food and then an amount for example 2 eggs, and show them a calorie value to help with controling their calorie intake. This section is also designed to, in the future, take data provided by personal calorie burning trackers to then keep a live reading of daily calorie intake and calories burnt using the calculator, local storage and the data provided by a thrid party technology.
 # Resources page:
